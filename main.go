@@ -9,7 +9,7 @@ func main() {
 	mux := http.NewServeMux()
 	server := &http.Server{
 		Addr: ":8080",
-		Handler: mux
+		Handler: mux,
 	}
 
 	server.ListenAndServe()
