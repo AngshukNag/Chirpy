@@ -1,7 +1,7 @@
 package main
 
 import (
-	// "fmt"
+	"fmt"
 	"net/http"
 )
 
@@ -12,5 +12,6 @@ func main() {
 		Handler: mux,
 	}
 
+	fmt.PrintLn("Starting HTTP Server ......")
 	server.ListenAndServe()
 }
